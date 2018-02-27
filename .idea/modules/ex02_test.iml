@@ -15,6 +15,15 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="ex02_main" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../lib/ojdbc6.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
     <orderEntry type="library" name="Gradle: org.springframework:spring-webmvc:5.0.3.RELEASE" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework:spring-context:5.0.3.RELEASE" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework:spring-test:5.0.3.RELEASE" level="project" />
