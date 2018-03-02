@@ -17,6 +17,7 @@
           <element id="dir-copy" path="$PROJECT_DIR$/out/production/resources" />
         </element>
         <element id="directory" name="lib">
+          <element id="file-copy" path="$PROJECT_DIR$/lib/ojdbc6.jar" />
           <element id="library" level="project" name="Gradle: org.springframework:spring-webmvc:5.0.3.RELEASE" />
           <element id="library" level="project" name="Gradle: org.springframework:spring-context:5.0.3.RELEASE" />
           <element id="library" level="project" name="Gradle: org.springframework:spring-test:5.0.3.RELEASE" />
@@ -38,7 +39,7 @@
           <element id="library" level="project" name="Gradle: org.springframework:spring-expression:5.0.3.RELEASE" />
           <element id="library" level="project" name="Gradle: org.springframework:spring-core:5.0.3.RELEASE" />
           <element id="library" level="project" name="Gradle: org.springframework:spring-jcl:5.0.3.RELEASE" />
-          <element id="file-copy" path="$PROJECT_DIR$/lib/ojdbc6.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-jdk14/1.7.25/bccda40ebc8067491b32a88f49615a747d20082d/slf4j-jdk14-1.7.25.jar" />
         </element>
       </element>
     </root>
