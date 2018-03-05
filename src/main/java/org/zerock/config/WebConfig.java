@@ -8,9 +8,9 @@ import javax.servlet.ServletRegistration;
 
 public class WebConfig  extends AbstractAnnotationConfigDispatcherServletInitializer {
 
-    private final String UPLOAD_DIR = "C:\\upload\\tmp";
+    private static final String UPLOAD_DIR = "C:\\upload\\tmp";
     // 10MB
-    private final long MAX_UPLOAD_SIZE = 1024 * 1024 * 10;
+    private static final long MAX_UPLOAD_SIZE = 1024 * 1024 * 10;
 
     @Override
     protected Class<?>[] getRootConfigClasses() {

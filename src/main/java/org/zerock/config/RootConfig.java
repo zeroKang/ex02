@@ -31,9 +31,7 @@ public class RootConfig {
         hikariConfig.addDataSourceProperty("dataSource.prepStmtCacheSqlLimit", "2048");
         hikariConfig.addDataSourceProperty("dataSource.useServerPrepStmts", "true");
 
-        HikariDataSource dataSource = new HikariDataSource(hikariConfig);
-
-        return dataSource;
+        return new HikariDataSource(hikariConfig);
     }
 
     @Bean
