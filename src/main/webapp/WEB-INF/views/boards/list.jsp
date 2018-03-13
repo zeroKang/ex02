@@ -81,20 +81,24 @@
 
       $("#regBtn").on("click", function(){
 
+
         self.location ="/boards/register";
 
       });
 
 
       var result = '${result}';
-        checkModal(result);
+      checkModal(result);
+      history.replaceState({},null,null);
 
         function checkModal(result){
 
+            if(result === '' || history.state){
+                return;
+            }
             if(result === ''){
                 return;
             }
-
             if(parseInt(result) > 0 ){
                 $(".modal-body").html( "게시글 " + parseInt(result) +" 번이 등록되었습니다.");
             }
