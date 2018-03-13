@@ -81,7 +81,7 @@
 
       $("#regBtn").on("click", function(){
 
-        self.location ="/board/register";
+        self.location ="/boards/register";
 
       });
 
