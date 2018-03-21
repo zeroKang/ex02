@@ -5,6 +5,7 @@ import lombok.extern.log4j.Log4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.zerock.domain.BoardVO;
+import org.zerock.domain.Criteria;
 import org.zerock.persistence.BoardMapper;
 
 import java.util.Optional;
@@ -13,7 +14,7 @@ import java.util.Optional;
 @Log4j
 public class BoardServiceImpl implements BoardService {
 
-    @Setter(onMethod =  @__(@Autowired))
+    @Setter(onMethod = @__(@Autowired))
     private BoardMapper mapper;
 
     @Override
@@ -54,6 +55,23 @@ public class BoardServiceImpl implements BoardService {
     @Override
     public Iterable<BoardVO> getList() {
         return mapper.getList();
+    }
+
+    @Override
+    public Iterable<BoardVO> getList(Criteria cri) {
+
+        log.info("getListWithPage.........." + cri);
+
+        return mapper.getListWithPaging(cri);
+    }
+
+    @Override
+    public int getTotal(Criteria cri) {
+
+        log.info("getTotal.........." + cri);
+
+        return mapper.getTotalCount(cri);
+
     }
 
 

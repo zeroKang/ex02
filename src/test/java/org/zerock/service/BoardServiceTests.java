@@ -9,6 +9,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import lombok.Setter;
 import lombok.extern.log4j.Log4j;
 import org.zerock.domain.BoardVO;
+import org.zerock.domain.Criteria;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = {
@@ -35,8 +36,10 @@ public class BoardServiceTests {
     @Test
     public void testGetList() {
 
-        service.getList().forEach(board -> log.info(board));
+        //service.getList().forEach(board -> log.info(board));
+        service.getList(new Criteria(2,10)).forEach(board -> log.info(board));
     }
+
 
     @Test
     public void testGet() {
